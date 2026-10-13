@@ -1,0 +1,34 @@
+benchmark,model,family,comparison,effect_pp,ci_low_pp,ci_high_pp,adjusted_p_value,significant,interpretation
+MMLU-Pro,Qwen,Shots effect,0-shot vs 1-shot random,0.7000000000000006,-1.3,2.7,0.5583942911655912,False,Positive but not significant
+MMLU-Pro,Qwen,Shots effect,0-shot vs 3-shot random,1.4000000000000012,-0.5,3.3000000000000003,0.35933002961606064,False,Positive but not significant
+MMLU-Pro,Qwen,Shots effect,0-shot vs 5-shot random,1.7000000000000015,-0.3,3.6999999999999997,0.3434047260376739,False,Positive but not significant
+MMLU-Pro,Qwen,Selection effect,1-shot random vs semantic,0.20000000000000018,-1.9,2.3,1.0,False,Positive but not significant
+MMLU-Pro,Qwen,Selection effect,3-shot random vs semantic,0.40000000000000036,-1.5,2.3,1.0,False,Positive but not significant
+MMLU-Pro,Qwen,Selection effect,5-shot random vs semantic,0.9000000000000008,-1.0,2.9000000000000004,1.0,False,Positive but not significant
+MMLU-Pro,Granite,Shots effect,0-shot vs 1-shot random,-5.099999999999999,-7.6,-2.7,0.0002921731444290389,True,Significant degradation
+MMLU-Pro,Granite,Shots effect,0-shot vs 3-shot random,-4.399999999999999,-6.9,-2.0,0.0009795862385468884,True,Significant degradation
+MMLU-Pro,Granite,Shots effect,0-shot vs 5-shot random,-2.400000000000002,-4.9,0.0,0.07217098590572892,False,Negative but not significant
+MMLU-Pro,Granite,Selection effect,1-shot random vs semantic,1.200000000000001,-1.3,3.6999999999999997,1.0,False,Positive but not significant
+MMLU-Pro,Granite,Selection effect,3-shot random vs semantic,0.10000000000000009,-2.3,2.5,1.0,False,Positive but not significant
+MMLU-Pro,Granite,Selection effect,5-shot random vs semantic,0.10000000000000009,-2.2024999999999975,2.4,1.0,False,Positive but not significant
+MMLU-Pro,Gemma,Shots effect,0-shot vs 1-shot random,-2.9999999999999973,-5.4,-0.7000000000000001,0.04829675730629726,True,Significant degradation
+MMLU-Pro,Gemma,Shots effect,0-shot vs 3-shot random,-1.5999999999999959,-3.9,0.7000000000000001,0.18810748401589172,False,Negative but not significant
+MMLU-Pro,Gemma,Shots effect,0-shot vs 5-shot random,-2.099999999999996,-4.3999999999999995,0.2,0.16498258505032398,False,Negative but not significant
+MMLU-Pro,Gemma,Selection effect,1-shot random vs semantic,0.5000000000000004,-2.0,3.0,1.0,False,Positive but not significant
+MMLU-Pro,Gemma,Selection effect,3-shot random vs semantic,0.40000000000000036,-1.5,2.3,1.0,False,Positive but not significant
+MMLU-Pro,Gemma,Selection effect,5-shot random vs semantic,1.3000000000000012,-0.7000000000000001,3.2,0.6828784713301406,False,Positive but not significant
+QuALITY,Qwen,Shots effect,0-shot vs 1-shot random,-2.608695652173913,-5.043478260869565,-0.34782608695652173,0.03593964060359396,True,Significant degradation
+QuALITY,Qwen,Shots effect,0-shot vs 3-shot random,-4.000000000000001,-6.608695652173914,-1.565217391304348,0.004179958200417996,True,Significant degradation
+QuALITY,Qwen,Selection effect,1-shot random vs semantic,-3.4782608695652173,-5.913043478260869,-1.3913043478260867,0.008159918400815992,True,Significant degradation
+QuALITY,Qwen,Selection effect,3-shot random vs semantic,-0.17391304347826084,-2.434782608695651,2.08695652173913,0.9080309196908031,False,Negative but not significant
+QuALITY,Granite,Shots effect,0-shot vs 1-shot random,-0.5217391304347829,-2.956521739130435,1.9130434782608694,0.6351236487635123,False,Negative but not significant
+QuALITY,Granite,Shots effect,0-shot vs 3-shot random,-1.5652173913043477,-4.173913043478262,1.0434782608695656,0.6100338996610034,False,Negative but not significant
+QuALITY,Granite,Selection effect,1-shot random vs semantic,-0.6956521739130431,-3.3043478260869557,1.9130434782608698,1.0,False,Negative but not significant
+QuALITY,Granite,Selection effect,3-shot random vs semantic,-0.6956521739130435,-3.478260869565217,2.08695652173913,1.0,False,Negative but not significant
+QuALITY,Gemma,Shots effect,0-shot vs 1-shot random,-4.695652173913045,-7.304347826086959,-2.0869565217391304,0.0013799862001379986,True,Significant degradation
+QuALITY,Gemma,Shots effect,0-shot vs 3-shot random,-4.347826086956522,-7.130434782608695,-1.5652173913043486,0.0028599714002859973,True,Significant degradation
+QuALITY,Gemma,Selection effect,1-shot random vs semantic,1.565217391304348,-0.6956521739130439,3.82608695652174,0.4317756822431776,False,Positive but not significant
+QuALITY,Gemma,Selection effect,3-shot random vs semantic,1.0714285714285718,-1.071428571428571,3.0357142857142865,0.4317756822431776,False,Positive but not significant
+QuALITY,Qwen,Context utilization,No context vs full context,37.50000000000001,29.5,45.49999999999999,9.99990000099999e-06,True,Significant context benefit
+QuALITY,Granite,Context utilization,No context vs full context,18.499999999999993,10.0,27.000000000000007,0.00032999670003299966,True,Significant context benefit
+QuALITY,Gemma,Context utilization,No context vs full context,12.0,4.5,19.00000000000001,0.002189978100218998,True,Significant context benefit

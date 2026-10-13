@@ -1,0 +1,20 @@
+Benchmark,Model,Comparison,Effect (pp),95% CI,p-value,Significant,Interpretation
+MMLU-Pro,Qwen,0-shot vs 1-shot random,+0.7,"[-1.3, +2.7]",0.558,No,Positive but not significant
+MMLU-Pro,Qwen,0-shot vs 3-shot random,+1.4,"[-0.5, +3.3]",0.359,No,Positive but not significant
+MMLU-Pro,Qwen,0-shot vs 5-shot random,+1.7,"[-0.3, +3.7]",0.343,No,Positive but not significant
+MMLU-Pro,Granite,0-shot vs 1-shot random,-5.1,"[-7.6, -2.7]",<0.001,Yes,Significant degradation
+MMLU-Pro,Granite,0-shot vs 3-shot random,-4.4,"[-6.9, -2.0]",<0.001,Yes,Significant degradation
+MMLU-Pro,Granite,0-shot vs 5-shot random,-2.4,"[-4.9, +0.0]",0.072,No,Negative but not significant
+MMLU-Pro,Gemma,0-shot vs 1-shot random,-3.0,"[-5.4, -0.7]",0.048,Yes,Significant degradation
+MMLU-Pro,Gemma,0-shot vs 3-shot random,-1.6,"[-3.9, +0.7]",0.188,No,Negative but not significant
+MMLU-Pro,Gemma,0-shot vs 5-shot random,-2.1,"[-4.4, +0.2]",0.165,No,Negative but not significant
+QuALITY,Qwen,0-shot vs 1-shot random,-2.6,"[-5.0, -0.3]",0.036,Yes,Significant degradation
+QuALITY,Qwen,0-shot vs 3-shot random,-4.0,"[-6.6, -1.6]",0.004,Yes,Significant degradation
+QuALITY,Qwen,1-shot random vs semantic,-3.5,"[-5.9, -1.4]",0.008,Yes,Significant degradation
+QuALITY,Granite,0-shot vs 1-shot random,-0.5,"[-3.0, +1.9]",0.635,No,Negative but not significant
+QuALITY,Granite,0-shot vs 3-shot random,-1.6,"[-4.2, +1.0]",0.610,No,Negative but not significant
+QuALITY,Gemma,0-shot vs 1-shot random,-4.7,"[-7.3, -2.1]",0.001,Yes,Significant degradation
+QuALITY,Gemma,0-shot vs 3-shot random,-4.3,"[-7.1, -1.6]",0.003,Yes,Significant degradation
+QuALITY,Qwen,Full context vs no context,+37.5,"[+29.5, +45.5]",<0.001,Yes,Significant context benefit
+QuALITY,Granite,Full context vs no context,+18.5,"[+10.0, +27.0]",<0.001,Yes,Significant context benefit
+QuALITY,Gemma,Full context vs no context,+12.0,"[+4.5, +19.0]",0.002,Yes,Significant context benefit

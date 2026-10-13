@@ -1,0 +1,78 @@
+project:
+  name: icl_evaluation
+  seed: 42
+models:
+  - qwen3_30b_a3b_instruct_2507
+  - granite4_micro
+  - gemma3_4b
+
+pilot:
+  mmlu_pro_items: 20
+  quality_items: 20
+
+benchmarks:
+
+  mmlu_pro:
+    demo_file: data/splits/mmlu_pro_demo.jsonl
+    eval_file: data/splits/mmlu_pro_eval.jsonl
+
+    conditions:
+      - shots: 0
+        strategy: none
+
+      - shots: 1
+        strategy: random
+
+      - shots: 1
+        strategy: semantic
+
+      - shots: 3
+        strategy: random
+
+      - shots: 3
+        strategy: semantic
+
+      - shots: 5
+        strategy: random
+
+      - shots: 5
+        strategy: semantic
+
+
+  quality:
+    demo_file: data/splits/quality_demo.jsonl
+    eval_file: data/splits/quality_eval.jsonl
+
+    conditions:
+      - shots: 0
+        strategy: none
+
+      - shots: 1
+        strategy: random
+
+      - shots: 1
+        strategy: semantic
+
+      - shots: 3
+        strategy: random
+
+      - shots: 3
+        strategy: semantic
+
+
+selection:
+  embedding_model: sentence-transformers/all-MiniLM-L6-v2
+
+random_selection:
+  seeds:
+    - 42
+    - 43
+    - 44
+
+generation:
+  temperature: 0.0
+  top_p: 1.0
+  max_new_tokens: 16
+
+quality:
+  max_prompt_tokens: 32000

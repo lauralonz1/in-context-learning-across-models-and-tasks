@@ -1,0 +1,17 @@
+import yaml
+
+
+def load_config(path="configs/experiment.yaml"):
+    """
+    Carica la configurazione YAML dell'esperimento.
+    """
+
+    with open(
+        path,
+        "r",
+        encoding="utf-8"
+    ) as f:
+
+        config = yaml.safe_load(f)
+
+    return config
