@@ -45,7 +45,6 @@ src/
     utils/
 
 results/
-    raw_predictions/
     statistics/
 
 tests/
@@ -106,12 +105,6 @@ API credentials must be provided locally through a `.env` file.
 The `.env` file is intentionally not included in the submission.
 
 ## Results
-
-Final model predictions are stored in:
-
-```text
-results/raw_predictions/
-```
 
 Final statistical outputs are stored in:
 
